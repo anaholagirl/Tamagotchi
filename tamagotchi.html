@@ -13,7 +13,7 @@
       <div id="create-pet">
         <h1>Tamagotchi</h1>
         <br>
-        <form>
+        <form id="get-name">
           <label for="pet-name">Name your pet!</label>
           <input id="pet-name" type="text" required>
           <button type="submit" class="btn btn-primary">Get your new pet!</button>
@@ -36,11 +36,17 @@
 
       <div id="show-levels">
         <div class="col-md-6">
-          <h3><span id="name-of-pet"></span>'s Vital signs</h3><br>
+          <h3><span class="name-of-pet"></span>'s Vital signs</h3><br>
           <h4>How hungry am I?  <span id="hunger-level"></span></h4><br>
           <h4>Am I tired?  <span id="tired-level"></span></h4><br>
           <h4>Am I feeling neglected?  <span id="abandonment-level"></span></h4>
 
+        </div>
+      </div>
+      <div id="dead-pet">
+        <h1>You killed <span class="name-of-pet"></span>!!!!! How could you????</h1>
+        <div>
+          <button type="button" id="start-a-new-pet">Start a New Pet</button>
         </div>
       </div>
     </div>
