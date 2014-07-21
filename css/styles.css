@@ -1,6 +1,11 @@
 #create-pet {
   text-align: center;
 }
-img {
-  display: block;
+
+#show-levels  {
+  display: none;
+}
+#dead-pet {
+  display: none;
+  color: red;
 }
