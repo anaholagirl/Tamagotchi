@@ -24,6 +24,8 @@ $(document).ready(function() {
     myPet.initialize(inputtedName);
     currentPet = myPet;
 
+    $("#instructions").show();
+    $("#pet-care").show();
     $(".name-of-pet").text(currentPet.name);
     $("#hunger-level").text(currentPet.foodLevel);
     $("#tired-level").text(currentPet.sleepLevel);
@@ -33,14 +35,19 @@ $(document).ready(function() {
 
   $("button#feed-pet").click(function () {
     $("#hunger-level").text(currentPet.foodLevel += 1);
+    $("#show-levels").hide();
   });
 
   $("button#play-pet").click(function () {
     $("#abandonment-level").text(currentPet.activityLevel += 1);
+    $("#hunger-level").text(currentPet.foodLevel -= 1);
+    $("#tired-level").text(currentPet.sleepLevel -= 1);
+    $("#show-levels").hide();
   });
 
   $("button#sleep-pet").click(function () {
     $("#tired-level").text(currentPet.sleepLevel += 1);
+    $("#show-levels").hide();
   });
 
   $("button#check-pet").click(function () {

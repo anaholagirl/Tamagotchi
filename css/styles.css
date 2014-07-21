@@ -1,11 +1,20 @@
 #create-pet {
   text-align: center;
 }
-
+#instructions {
+  display: none;
+}
+#pet-care {
+  display: none;
+}
 #show-levels  {
   display: none;
 }
 #dead-pet {
+  text-align: center;
   display: none;
   color: red;
+}
+#instructions .name-of-pet {
+  font-weight: bold;
 }

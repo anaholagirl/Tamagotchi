@@ -19,15 +19,17 @@
           <button type="submit" class="btn btn-primary">Get your new pet!</button>
         </form>
         <br>
-        <p>Congratulations!  You now have a new pet tamagotchi.  It is yours to feed, play with and love.  Remember, <span class="name-of-pet"></span> is now your responsibility.  Make sure that you take care of it so that it stays alive.  If you don't feed it on a regular basis it may die on you.  Enjoy your new pet!</p>
+        <div id="instructions">
+          <p>Congratulations!  You now have a new pet tamagotchi.  It is yours to feed, play with and love.  Remember, <span class="name-of-pet"></span> is now your responsibility.  Make sure that you take care of it so that it stays alive.  If you don't feed it on a regular basis it may die on you.  Enjoy your new pet!</p>
+        </div>
       </div>
       <br>
       <div id="pet-care">
         <div class="col-md-6">
-          <button type="button" id="check-pet" class="btn btn-block">I want to check on my pet</button>
-          <button type="button" id="feed-pet" class="btn btn-block">I want to feed my pet</button>
-          <button type="button" id="play-pet" class="btn btn-block">I want to play with my pet</button>
-          <button type="button" id="sleep-pet" class="btn btn-block">Zzzzzzzz...</button>
+          <button type="button" id="check-pet" class="btn btn-block btn-danger">I want to check on my pet</button>
+          <button type="button" id="feed-pet" class="btn btn-block btn-warning">I want to feed my pet</button>
+          <button type="button" id="play-pet" class="btn btn-block btn-success">I want to play with my pet</button>
+          <button type="button" id="sleep-pet" class="btn btn-block btn-info">Zzzzzzzz...</button>
         </div>
         <div class="col-md-6">
           <img src="img/kikitchi_blue.png" class="img-responsive" alt="Picture of a Tamagotchi">
@@ -46,7 +48,7 @@
       <div id="dead-pet">
         <h1>You killed <span class="name-of-pet"></span>!!!!! How could you????</h1>
         <div>
-          <button type="button" id="start-a-new-pet">Start a New Pet</button>
+          <button type="button" id="start-a-new-pet" class="btn-lg btn-primary">Start a New Pet</button>
         </div>
       </div>
     </div>
