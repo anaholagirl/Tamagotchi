@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Tamagotchi</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div id="create-pet">
+        <h1>Tamagotchi</h1>
+        <br>
+        <form>
+          <label for="pet-name">Name your pet!</label>
+          <input id="pet-name" type="text" required>
+          <button type="submit" class="btn btn-primary">Get your new pet!</button>
+        </form>
+        <br>
+        <p>Congratulations!  You now have a new pet tamagotchi.  It is yours to feed, play with and love.  Remember, <span class="name-of-pet"></span> is now your responsibility.  Make sure that you take care of it so that it stays alive.  If you don't feed it on a regular basis it may die on you.  Enjoy your new pet!</p>
+      </div>
+      <br>
+      <div id="pet-care">
+        <div class="col-md-6">
+          <button type="button" id="check-pet" class="btn btn-block">I want to check on my pet</button>
+          <button type="button" id="feed-pet" class="btn btn-block">I want to feed my pet</button>
+          <button type="button" id="play-pet" class="btn btn-block">I want to play with my pet</button>
+          <button type="button" id="sleep-pet" class="btn btn-block">Zzzzzzzz...</button>
+        </div>
+        <div class="col-md-6">
+          <img src="img/kikitchi_blue.png" class="img-responsive" alt="Picture of a Tamagotchi">
+        </div>
+      </div>
+
+      <div id="show-levels">
+        <div class="col-md-6">
+          <h3><span id="name-of-pet"></span>'s Vital signs</h3><br>
+          <h4>How hungry am I?  <span id="hunger-level"></span></h4><br>
+          <h4>Am I tired?  <span id="tired-level"></span></h4><br>
+          <h4>Am I feeling neglected?  <span id="abandonment-level"></span></h4>
+
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
